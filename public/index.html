@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Music Sharing App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Music Sharing App</h1>
+    <form id="upload-form">
+      <input type="file" id="file-input" accept="audio/*" required />
+      <button type="submit">Upload Music</button>
+    </form>
+    <div id="player">
+      <h2>Now Playing:</h2>
+      <audio controls id="audio-player"></audio>
+    </div>
+    <div id="uploaded-files">
+      <h2>Uploaded Music:</h2>
+      <ul id="file-list"></ul>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
